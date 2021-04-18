@@ -19,7 +19,7 @@ def pred(request):
     f7 = int(request.GET['f7'])
     f8 = int(request.GET['f8'])
     
-    loaded_model = pickle.load(open('/home/sagar/ml_app/ml_car_price/finalized_model.sav', 'rb'))
+    loaded_model = pickle.load(open('finalized_model.sav', 'rb'))
 
     result = loaded_model.predict(np.array([[f1,f2,f3,f4,f5,f6,f7,f8]]))
     
