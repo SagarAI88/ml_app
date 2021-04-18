@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import pickle
 import numpy as np
+import finalized_model.sav
 
 # Create your views here.
 
